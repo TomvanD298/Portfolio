@@ -8,15 +8,17 @@
 } */
 
 body {
+  background-color: #001a23;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
-  color: white;
-
-  background-color: #7A9E7E;
-
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.beginpagina {
+  background-color: #7A9E7E;
 }
 
 ul {
@@ -29,17 +31,21 @@ ul {
 
 }
 
-nav li{
-font-size: 1em;
-color:white;
-text-decoration: none;
-list-style: none;
-padding:30px;
+nav li {
+  text-decoration: none;
+  list-style: none;
 }
 
-nav li:hover {
+nav a {
+  font-size: 1em;
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
   color: #b3efb2;
-  transition:0.2s ease;
+  transition: 0.2s ease;
 }
 
 
@@ -49,8 +55,13 @@ h1 {
   font-weight: 100;
   line-height: 1.5;
   white-space: nowrap;
-
   margin-top: 250px;
+}
+
+h1 span {
+  color: #b3efb2;
+  font-weight: 700;
+
 }
 
 h2 {
@@ -62,6 +73,90 @@ h2 {
   overflow: hidden;
   position: relative;
 }
+
+p {
+  color: white;
+  font-size: 1.3em;
+}
+
+p a {
+  color: #b3efb2;
+}
+
+#overmij {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 10%;
+}
+
+#overmij img {
+  width: 40%;
+  height: auto;
+  animation: fadeInLeft 2s;
+  visibility: visible;
+  animation-delay: 0.4s;
+}
+
+#overmij section {
+  width: 50%;
+}
+
+#overmij h1 {
+  margin-top: 0px;
+  animation: fadeInRight 2s;
+  visibility: visible;
+  animation-delay: 0.4s;
+}
+
+#overmij p {
+  animation: fadeInRight 2s;
+  visibility: visible;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 
 
 /* -----------------------|https://codepen.io/alvarotrigo/pen/PoKMyWE|--------------------- */
@@ -175,142 +270,213 @@ h2 {
   margin: auto;
 }
 
-.x1{
--webkit-animation: floatUp 4s infinite linear;
--moz-animation: floatUp 4s infinite linear;
--o-animation: floatUp 4s infinite linear;
-animation: floatUp 4s infinite linear;
- -webkit-transform: scale(1.0);
- -moz-transform: scale(1.0);
- -o-transform: scale(1.0);
-transform: scale(1.0);
+.x1 {
+  -webkit-animation: floatUp 4s infinite linear;
+  -moz-animation: floatUp 4s infinite linear;
+  -o-animation: floatUp 4s infinite linear;
+  animation: floatUp 4s infinite linear;
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  transform: scale(1.0);
 }
 
-.x2{
--webkit-animation: floatUp 7s infinite linear;
--moz-animation: floatUp 7s infinite linear;
--o-animation: floatUp 7s infinite linear;
-animation: floatUp 7s infinite linear;
--webkit-transform: scale(1.6);
--moz-transform: scale(1.6);
--o-transform: scale(1.6);
-transform: scale(1.6);
-left: 15%;
+.x2 {
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  left: 15%;
 }
 
-.x3{
--webkit-animation: floatUp 2.5s infinite linear;
--moz-animation: floatUp 2.5s infinite linear;
--o-animation: floatUp 2.5s infinite linear;
-animation: floatUp 2.5s infinite linear;
--webkit-transform: scale(.5);
--moz-transform: scale(.5);
--o-transform: scale(.5);
-transform: scale(.5);
-left: -15%;
+.x3 {
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -o-transform: scale(.5);
+  transform: scale(.5);
+  left: -15%;
 }
 
-.x4{
--webkit-animation: floatUp 4.5s infinite linear;
--moz-animation: floatUp 4.5s infinite linear;
--o-animation: floatUp 4.5s infinite linear;
-animation: floatUp 4.5s infinite linear;
--webkit-transform: scale(1.2);
--moz-transform: scale(1.2);
--o-transform: scale(1.2);
-transform: scale(1.2);
-left: -34%;
+.x4 {
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -34%;
 }
 
-.x5{
--webkit-animation: floatUp 8s infinite linear;
--moz-animation: floatUp 8s infinite linear;
--o-animation: floatUp 8s infinite linear;
-animation: floatUp 8s infinite linear;
--webkit-transform: scale(2.2);
--moz-transform: scale(2.2);
--o-transform: scale(2.2);
-transform: scale(2.2);
-left: -57%;
+.x5 {
+  -webkit-animation: floatUp 8s infinite linear;
+  -moz-animation: floatUp 8s infinite linear;
+  -o-animation: floatUp 8s infinite linear;
+  animation: floatUp 8s infinite linear;
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -o-transform: scale(2.2);
+  transform: scale(2.2);
+  left: -57%;
 }
 
-.x6{
--webkit-animation: floatUp 3s infinite linear;
--moz-animation: floatUp 3s infinite linear;
--o-animation: floatUp 3s infinite linear;
-animation: floatUp 3s infinite linear;
--webkit-transform: scale(.8);
--moz-transform: scale(.8);
--o-transform: scale(.8);
-transform: scale(.8);
-left: -81%;
+.x6 {
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
+  animation: floatUp 3s infinite linear;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -o-transform: scale(.8);
+  transform: scale(.8);
+  left: -81%;
 }
 
-.x7{
--webkit-animation: floatUp 5.3s infinite linear;
--moz-animation: floatUp 5.3s infinite linear;
--o-animation: floatUp 5.3s infinite linear;
-animation: floatUp 5.3s infinite linear;
--webkit-transform: scale(3.2);
--moz-transform: scale(3.2);
--o-transform: scale(3.2);
-transform: scale(3.2);
-left: 37%;
+.x7 {
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
+  -webkit-transform: scale(3.2);
+  -moz-transform: scale(3.2);
+  -o-transform: scale(3.2);
+  transform: scale(3.2);
+  left: 37%;
 }
 
-.x8{
--webkit-animation: floatUp 4.7s infinite linear;
--moz-animation: floatUp 4.7s infinite linear;
--o-animation: floatUp 4.7s infinite linear;
-animation: floatUp 4.7s infinite linear;
--webkit-transform: scale(1.7);
--moz-transform: scale(1.7);
--o-transform: scale(1.7);
-transform: scale(1.7);
-left: 62%;
+.x8 {
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  left: 62%;
 }
 
-.x9{
--webkit-animation: floatUp 4.1s infinite linear;
--moz-animation: floatUp 4.1s infinite linear;
--o-animation: floatUp 4.1s infinite linear;
-animation: floatUp 4.1s infinite linear;
--webkit-transform: scale(0.9);
--moz-transform: scale(0.9);
--o-transform: scale(0.9);
-transform: scale(0.9);
-left: 85%;
+.x9 {
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  left: 85%;
 }
 
-button:focus{
-outline: none;
+button:focus {
+  outline: none;
 }
 
-@-webkit-keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
-25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
-75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+@-webkit-keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    top: 0vh;
+    opacity: .8;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
 }
-@-moz-keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
-25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
-75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+
+@-moz-keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    top: 0vh;
+    opacity: .8;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
 }
-@-o-keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
-25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
-75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+
+@-o-keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    top: 0vh;
+    opacity: .8;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
 }
-@keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
-25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
-75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+
+@keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    top: 0vh;
+    opacity: .8;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
 }
