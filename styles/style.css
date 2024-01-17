@@ -11,7 +11,7 @@ body {
   background-color: #001a23;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
-  width: 60%;
+  width: 70vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -124,41 +124,140 @@ p a {
     opacity: 0;
     transform: translateY(-40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes fadeInRight {
   0% {
     opacity: 0;
     transform: translateX(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
     transform: translateY(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
     transform: translateX(-40px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
+
+/* -----------------------|Portfolio Pagina|--------------------- */
+
+#mijnWerk {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#mijnWerkKop{
+  margin-top: 100px;
+  margin-left: 40%;
+
+}
+
+.blokje1,
+.blokje2 {
+  height: 400px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+}
+
+/* .blokje1:hover,
+.blokje2:hover {
+  scale: 103%;
+} */
+
+.blokje1 {
+  width: 60%;
+  animation: fadeInLeft 2s ease-out;
+
+}
+
+.blokje2 {
+  width: 30%;
+  animation: fadeInRight 2s ease-out;
+}
+
+
+.blokje1 img,
+.blokje2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blokje1 a, .blokje2 a{
+background-color: #001a236b;
+  color: white;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .5rem;
+  padding: 30px 50px;
+  border: none;
+}
+
+.blokje1 a:hover, .blokje2 a:hover {
+  background-color: rgba(0, 0, 0, 0.589);
+  scale: 1.2;
+}
+
+
+.blokje1 a {
+  position: relative;
+  bottom: 50%;
+  left: 30%;
+}
+
+
+.blokje2 a {
+  position: relative;
+  bottom: 50%;
+  left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -483,4 +582,35 @@ button:focus {
     top: -100vh;
     opacity: 0;
   }
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+  body {
+    width: 90vw;
+    
+  }
+
+  ul {
+    width: 90%;
+    padding: 50px 10px;
+  }
+
+  h1 {
+    margin-top: 50px;
+  }
+
+  .blokje1 {
+    width: 100%;
+
+  }
+
+  .blokje2 {
+    width: 100%;
+  }
+
 }
