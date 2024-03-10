@@ -93,6 +93,7 @@ p a {
 
 #overmij img {
   width: 40%;
+  border-radius: 10px;
   height: auto;
   animation: fadeInLeft 2s ease-out;
   /* visibility: none; */
