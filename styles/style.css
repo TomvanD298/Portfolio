@@ -8,7 +8,8 @@
 } */
 
 body {
-  background-color: #003f54;
+  /* background-color: #003f54; */
+  background-color: rgb(18, 36, 42);
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   width: 70vw;
@@ -18,7 +19,7 @@ body {
 
 
 .beginpagina {
-  background-color: #7A9E7E;
+  background-color: #66a26d;
 }
 
 ul {
@@ -38,6 +39,7 @@ nav li {
 
 nav a {
   font-size: 1.5em;
+  font-weight: 100;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -45,22 +47,25 @@ nav a {
 }
 
 nav a:hover {
-  color: #b3efb2;
+  /* color: #b3efb2; */
+  color: rgb(134, 252, 141);
   transition: 0.2s ease;
 }
 
 
 h1 {
   color: white;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 100;
   line-height: 1.5;
   white-space: nowrap;
-  margin-top: 250px;
+  margin-top: 15%;
 }
 
+
 h1 span {
-  color: #b3efb2;
+  /* color: #b3efb2; */
+  color: rgb(134, 252, 141);
   font-weight: 700;
 
 }
@@ -77,11 +82,14 @@ h2 {
 
 p {
   color: white;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 p a {
-  color: #b3efb2;
+  /* color: #b3efb2; */
+  /* color: rgb(134, 252, 141); */
+  color: rgb(130, 215, 251);
 }
 
 #overmij {
@@ -106,9 +114,8 @@ p a {
 
 #overmij h1 {
   margin-top: 0px;
+  margin-bottom: 0px;
   animation: fadeInRight 2s ease-out;
-
-
 }
 
 #overmij p {
@@ -183,7 +190,8 @@ p a {
 #mijnWerkKop {
   margin-top: 100px;
   width: 100%;
-  color: #b3efb2;
+  /* color: #b3efb2; */
+  color: rgb(134, 252, 141);
   text-align: center;
   font-weight: 600;
 }
@@ -191,14 +199,15 @@ p a {
 .blokje1,
 .blokje2 {
   height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 2.5%;
   margin-right: 10px;
 
 }
 
 .blokje1:hover,
 .blokje2:hover {
-  border: #b3efb28e 5px solid;
+  /* border: #b3efb28e 5px solid; */
+  border: rgba(134, 252, 142, 0.826) 5px solid;
   border-radius: 10px;
   box-sizing: border-box;
 
@@ -233,10 +242,11 @@ p a {
 
 .blokje1 a,
 .blokje2 a {
-  background-color: #001a2398;
+  /* background-color: #001a2398; */
+  background-color: rgba(18, 36, 42, 0.7);
   color: white;
   font-size: 1em;
-  font-weight: 900;
+  font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .5rem;
@@ -274,12 +284,13 @@ p a {
 
 #home p {
   text-decoration: underline;
-  color: white;
+  color: rgb(130, 215, 251);
   font-size: 1.2em;
 }
 
 #home p:hover {
-  color: #b3efb2;
+  /* color: #b3efb2; */
+  color: white;
   text-decoration: none;
 }
 
@@ -289,9 +300,10 @@ p a {
 }
 
 .groteBox {
-  margin: 0 0 5% 15%;
-  width: 70%;
-  background-color: #00222d;
+  margin: 0 0 5% 0;
+  width: 100%;
+  /* background-color: #00222d; */
+  background-color: rgb(29, 62, 71);
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
   padding-bottom: 20px;
   border-radius: 10px;
@@ -299,8 +311,9 @@ p a {
 
 .groteBox h2 {
   text-align: center;
-  font-size: 2.5em;
-  color: #b3efb2;
+  font-size: 3em;
+  /* color: #b3efb2; */
+  color: rgb(134, 252, 141);
   font-weight: 400;
   padding-top: 20px;
 }
@@ -310,39 +323,58 @@ p a {
   height: auto;
   width: 70%;
   margin-left: 15%;
+  padding-bottom: 30px;
+}
+
+.groteBox img {
+  width: 50%;
+  margin-left: 25%;
 }
 
 .groteBox img:hover {
   scale: 110%;
 }
 
-.kleineBox a {
-  width: 90%;
-  margin-left: 5%;
-  font-size: 1.2em;
-  color: #08a3db;
-}
-
 .kleineBox {
   position: relative;
-  left: 15%;
-  width: 34%;
-  background-color: #00222d;
+  width: 45%;
+  margin-bottom: 2.5%;
+  margin-left: 3.5%;
+  /* background-color: #00222d; */
+  background-color: rgb(29, 62, 71);
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-  margin: 0 2% 2.5% 0;
   border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.kleineBox:nth-last-of-type(3){
+  margin-left: 2.5%;
+}
+
+.kleineBox:nth-last-of-type(1){
+  margin-left: 2.5%;
+}
+
+.kleineBox a {
+  font-size: 1.3em;
+  margin-left: 5%;
+  /* color: #08a3db; */
+  color: rgb(130, 215, 251);
+  
 }
 
 .kleineBox p {
   width: 90%;
   margin-left: 5%;
   color: #fff;
+  line-height: 1.3em;
 }
 
 .kleineBox h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-left: 5%;
-  color: #b3efb2;
+  /* color: #b3efb2; */
+  color: rgb(134, 252, 141);
 }
 
 .kleineBox img {
@@ -352,13 +384,60 @@ p a {
   margin-bottom: 10px;
 }
 
+#aanbevolen {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.miniBox {
+  width: 25%;
+  /* background-color: #00222d; */
+  background-color: rgb(29, 62, 71);
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.miniBox:hover {
+    background-color: #00222da7;
+}
+
+.miniBox img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  padding: 30px 15px 0 15px;
+  border-radius: 10px;
+}
+
+.miniBox img:hover {
+  scale: 1.1;
+}
+
+h4 {
+  margin-left: 15%;
+  font-size: 1.5em;
+  color: rgb(134, 252, 141);
+}
+
+.miniBox h5 {
+  color: rgb(134, 252, 141);
+}
+
 #golden {
   color: gold;
 }
 
 .arrowD {
   position: absolute;
-  top: 55%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -369,8 +448,10 @@ p a {
   display: block;
   width: 1.5vw;
   height: 1.5vw;
-  border-bottom: 5px solid rgb(255, 255, 255);
-  border-right: 5px solid rgb(255, 255, 255);
+  /* border-bottom: 5px solid rgb(255, 255, 255); */
+  /* border-right: 5px solid rgb(255, 255, 255); */
+  border-bottom: 5px solid rgb(130, 215, 251);
+  border-right: 5px solid rgb(130, 215, 251);
   transform: rotate(45deg);
   margin: -23px;
   animation: animate 2s infinite;
@@ -464,98 +545,20 @@ p a {
 }
 
 
-.box {
-  position: absolute;
-  top: 130%;
-  left: 15%;
-  width: 70%;
-  height: 30%;
-  background-color: white;
-  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.box h2 {
-  text-align: center;
-  width: 100%;
-}
-
-.box img {
-  width: 100px;
-  height: 100px;
-}
-
-.box img:hover {
-  scale: 110%;
-}
-
-.box img:nth-of-type(1) {
-  width: 125px;
-  height: 125px;
-}
-
-.box img:nth-of-type(2) {
-  width: 100px;
-  height: 100px;
-}
-
-.box img:nth-of-type(3) {
-  width: 150px;
-  height: 150px;
-}
-
-.box img:nth-of-type(4) {
-  width: 120px;
-  height: 120px;
-}
-
-.box img:nth-of-type(5) {
-  width: 130px;
-  height: 130px;
-}
-
-.box img:nth-of-type(6) {
-  width: 100px;
-  height: 100px;
-}
-
-.box img:nth-of-type(7) {
-  width: 120px;
-  height: 120px;
-}
-
-.box img:nth-of-type(8) {
-  width: 90px;
-  height: 90px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -----------------------|https://codepen.io/alvarotrigo/pen/PoKMyWE|--------------------- */
 
 .message {
-  background-color: #b3efb2;
-  color: #001a23;
+  /* background-color: #b3efb2; */
+  background-color: rgb(134, 252, 141);
+  color: black;
   display: block;
   font-weight: 900;
   overflow: hidden;
   position: absolute;
   padding-left: 0.5rem;
   top: 0.2rem;
-  left: 200px;
+  left: 220px;
   animation: openclose 7s ease-in-out infinite;
 }
 
@@ -575,12 +578,12 @@ p a {
   }
 
   15% {
-    width: 350px;
+    width: 375px;
   }
 
   30% {
     top: 0.2rem;
-    width: 350px;
+    width: 375px;
   }
 
   33% {
@@ -600,12 +603,12 @@ p a {
 
   48% {
     top: -4.5rem;
-    width: 400px;
+    width: 425px;
   }
 
   62% {
     top: -4.5rem;
-    width: 400px;
+    width: 425px;
   }
 
   66% {
@@ -622,12 +625,12 @@ p a {
 
   86% {
     top: -9rem;
-    width: 350px;
+    width: 375px;
   }
 
   95% {
     top: -9rem;
-    width: 350px;
+    width: 375px;
   }
 
   98% {
@@ -896,7 +899,8 @@ footer ul li {
 .streepje {
   width: 40px;
   height: 5px;
-  background-color: #b3efb2;
+  /* background-color: #b3efb2; */
+  background-color: rgb(134, 252, 141);
   margin: auto;
 }
 
