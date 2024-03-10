@@ -8,7 +8,7 @@
 } */
 
 body {
-  background-color: #001a23;
+  background-color: #003f54;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   width: 70vw;
@@ -181,8 +181,10 @@ p a {
 
 #mijnWerkKop{
   margin-top: 100px;
-  margin-left: 40%;
-
+  width: 100%;
+  color: #b3efb2;
+  text-align: center;
+  font-weight: 600;
 }
 
 .blokje1,
@@ -211,15 +213,19 @@ p a {
 
 
 .blokje1 img,
-.blokje2 img {
+.blokje2 img, .blokje1 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
+.blokje1 video {
+  object-fit: cover;
+}
+
 .blokje1 a, .blokje2 a{
-background-color: #001a236b;
+background-color: #001a2398;
   color: white;
   font-size: 1em;
   font-weight: 900;
@@ -239,14 +245,272 @@ background-color: #001a236b;
 .blokje1 a {
   position: relative;
   bottom: 50%;
-  left: 30%;
+  left: 34%;
 }
 
 
 .blokje2 a {
   position: relative;
   bottom: 50%;
-  left: 10%;
+  left: 20%;
+}
+
+/* ----------------------------------------------Detail pagina's--------------------------------------- */
+
+#home {
+  position: absolute;
+  top: 5%;
+  margin-left: 40px;
+}
+
+#home p {
+  text-decoration: underline;
+  color: white;
+  font-size: 1.2em;
+}
+
+#home p:hover {
+  color: #b3efb2;
+  text-decoration: none;
+}
+
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.groteBox {
+  margin: 0 0 5% 15%;
+  width: 70%;
+  background-color: #00222d;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.groteBox h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #b3efb2;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.groteBox img, .groteBox video{
+  height: auto;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.groteBox img:hover {
+  scale: 110%;
+}
+
+.kleineBox a{
+width: 90%;
+margin-left: 5%;
+font-size: 1.2em;
+color: #08a3db;
+}
+
+.kleineBox {
+  position: relative;
+  left: 15%;
+  width: 34%;
+  background-color: #00222d;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  margin: 0 2% 2.5% 0;
+  border-radius: 10px;
+}
+
+.kleineBox p {
+  width: 90%;
+  margin-left: 5%;
+  color: #fff;
+}
+
+.kleineBox h3 {
+  font-size: 1.5em;
+  margin-left: 5%;
+  color: #b3efb2;
+}
+
+.kleineBox img {
+  max-width: 250px;
+  max-height: 250px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+#golden{
+  color: gold;
+}
+
+.arrowD {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrowD span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+  margin: -23px;
+  animation: animate 2s infinite;
+}
+
+.arrowD span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrowD span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+
+
+/* ----------------------------------------------ARROW--------------------------------------- */
+/* https://codepen.io/vlt_dev/pen/NWMNzpE */
+
+.arrowL {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  cursor: pointer;
+  z-index: -99;
+}
+
+.arrowL span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  transform: rotate(45deg);
+  margin: -23px;
+  animation: animate 2s infinite;
+}
+
+.arrowR {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  transform: rotate(270deg);
+  cursor: pointer;
+  z-index: -99;
+}
+
+.arrowR span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  transform: rotate(45deg);
+  margin: -23px;
+  animation: animate 2s infinite;
+}
+
+.arrowL span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrowL span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+.arrowR span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrowR span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+
+.box {
+  position: absolute;
+  top: 130%;
+  left: 15%;
+  width: 70%;
+  height: 30%;
+  background-color: white;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.box h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+}
+
+.box img:hover {
+  scale: 110%;
+}
+
+.box img:nth-of-type(1){
+  width: 125px;
+  height: 125px;
+}
+.box img:nth-of-type(2){
+  width: 100px;
+  height: 100px;
+}
+.box img:nth-of-type(3){
+  width: 150px;
+  height: 150px;
+}
+.box img:nth-of-type(4){
+  width: 120px;
+  height: 120px;
+}
+.box img:nth-of-type(5){
+  width: 130px;
+  height: 130px;
+}
+.box img:nth-of-type(6){
+  width: 100px;
+  height: 100px;
+}
+.box img:nth-of-type(7){
+  width: 120px;
+  height: 120px;
+}
+.box img:nth-of-type(8){
+  width: 90px;
+  height: 90px;
 }
 
 
@@ -275,6 +539,10 @@ background-color: #001a236b;
   top: 0.2rem;
   left: 200px;
   animation: openclose 7s ease-in-out infinite;
+}
+
+.messageMobile {
+  visibility: hidden;
 }
 
 
@@ -585,6 +853,67 @@ button:focus {
 }
 
 
+/* ----------------------------------------------Social-------------------------------------- */
+/* https://codepen.io/vlt_dev/pen/OJZBxBd */
+
+
+footer ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+footer ul img {
+  height: 40%;
+}
+
+footer ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px 0 10px;
+}
+
+.streepje {
+  width: 40px;
+  height: 5px;
+  background-color: #b3efb2;
+  margin: auto;
+}
+
+footer ul li span {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+}
+
+footer ul li:hover span {
+  transition: .3s;
+}
+
+footer ul li:nth-child(2):hover span {
+  background: rgb(125, 192, 106) !important;
+}
+
+footer ul li:nth-child(3):hover span {
+  background: #FF0000 !important;
+}
+
+footer ul li:nth-child(4):hover span {
+  background: #CC296C !important;
+}
+
+footer ul li:nth-child(5):hover span {
+  background: rgb(55, 124, 180) !important;
+}
 
 
 
@@ -602,15 +931,100 @@ button:focus {
 
   h1 {
     margin-top: 50px;
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .message {
+  visibility: hidden;
+  }
+
+  .messageMobile {
+    visibility: visible;
+  }
+
+  #mijnWerkKop{
+    margin-top: 30px;
   }
 
   .blokje1 {
     width: 100%;
-
   }
 
   .blokje2 {
     width: 100%;
   }
 
+  .blokje1 a, .blokje2 a {
+    left: 10%;
+  }
+
+  .groteBox {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .groteBox video, .groteBox img {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #home {
+    position: absolute;
+    top: 3%;
+    margin-left: 10px;
+  }
+
+  .arrowD{
+    visibility: hidden;
+  }
+
+  .kleineBox {
+    width: 100%;
+    left: 0;
+    margin: 0 0 2.5% 0;
+  }
+
+  #overmij {
+    flex-wrap: wrap;
+  }
+
+  #overmij img {
+    width: 60%;
+    border-radius: 50%;
+  }
+
+  #overmij section {
+    width: 90%;
+  }
+
+  #overmij p {
+    font-size: 1.1em;
+  }
+  
+  footer ul {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+
+  footer ul img {
+    height: 20px;
+  }
+  
+  footer ul li {
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 10px;
+  }
+  
 }
