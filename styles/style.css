@@ -37,7 +37,7 @@ nav li {
 }
 
 nav a {
-  font-size: 1em;
+  font-size: 1.5em;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -52,7 +52,7 @@ nav a:hover {
 
 h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 100;
   line-height: 1.5;
   white-space: nowrap;
@@ -67,7 +67,7 @@ h1 span {
 
 h2 {
   color: white;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 100;
   line-height: 1.5;
   white-space: nowrap;
@@ -180,7 +180,7 @@ p a {
   justify-content: space-evenly;
 }
 
-#mijnWerkKop{
+#mijnWerkKop {
   margin-top: 100px;
   width: 100%;
   color: #b3efb2;
@@ -196,10 +196,14 @@ p a {
 
 }
 
-/* .blokje1:hover,
+.blokje1:hover,
 .blokje2:hover {
-  scale: 103%;
-} */
+  border: #b3efb28e 5px solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+
+}
 
 .blokje1 {
   width: 60%;
@@ -214,19 +218,22 @@ p a {
 
 
 .blokje1 img,
-.blokje2 img, .blokje1 video {
+.blokje2 img,
+.blokje1 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+
 }
 
 .blokje1 video {
   object-fit: cover;
 }
 
-.blokje1 a, .blokje2 a{
-background-color: #001a2398;
+.blokje1 a,
+.blokje2 a {
+  background-color: #001a2398;
   color: white;
   font-size: 1em;
   font-weight: 900;
@@ -237,7 +244,8 @@ background-color: #001a2398;
   border: none;
 }
 
-.blokje1 a:hover, .blokje2 a:hover {
+.blokje1 a:hover,
+.blokje2 a:hover {
   background-color: rgba(0, 0, 0, 0.589);
   scale: 1.2;
 }
@@ -279,6 +287,7 @@ background-color: #001a2398;
   display: flex;
   flex-wrap: wrap;
 }
+
 .groteBox {
   margin: 0 0 5% 15%;
   width: 70%;
@@ -296,7 +305,8 @@ background-color: #001a2398;
   padding-top: 20px;
 }
 
-.groteBox img, .groteBox video{
+.groteBox img,
+.groteBox video {
   height: auto;
   width: 70%;
   margin-left: 15%;
@@ -306,11 +316,11 @@ background-color: #001a2398;
   scale: 110%;
 }
 
-.kleineBox a{
-width: 90%;
-margin-left: 5%;
-font-size: 1.2em;
-color: #08a3db;
+.kleineBox a {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 1.2em;
+  color: #08a3db;
 }
 
 .kleineBox {
@@ -342,7 +352,7 @@ color: #08a3db;
   margin-bottom: 10px;
 }
 
-#golden{
+#golden {
   color: gold;
 }
 
@@ -439,17 +449,17 @@ color: #08a3db;
 
 @keyframes animate {
   0% {
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px, -20px);
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
   }
 
   50% {
-      opacity: 1;
+    opacity: 1;
   }
 
   100% {
-      opacity: 0;
-      transform: rotate(45deg) translate(20px, 20px);
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
 
@@ -481,35 +491,42 @@ color: #08a3db;
   scale: 110%;
 }
 
-.box img:nth-of-type(1){
+.box img:nth-of-type(1) {
   width: 125px;
   height: 125px;
 }
-.box img:nth-of-type(2){
+
+.box img:nth-of-type(2) {
   width: 100px;
   height: 100px;
 }
-.box img:nth-of-type(3){
+
+.box img:nth-of-type(3) {
   width: 150px;
   height: 150px;
 }
-.box img:nth-of-type(4){
+
+.box img:nth-of-type(4) {
   width: 120px;
   height: 120px;
 }
-.box img:nth-of-type(5){
+
+.box img:nth-of-type(5) {
   width: 130px;
   height: 130px;
 }
-.box img:nth-of-type(6){
+
+.box img:nth-of-type(6) {
   width: 100px;
   height: 100px;
 }
-.box img:nth-of-type(7){
+
+.box img:nth-of-type(7) {
   width: 120px;
   height: 120px;
 }
-.box img:nth-of-type(8){
+
+.box img:nth-of-type(8) {
   width: 90px;
   height: 90px;
 }
@@ -922,7 +939,7 @@ footer ul li:nth-child(5):hover span {
 
   body {
     width: 90vw;
-    
+
   }
 
   ul {
@@ -939,15 +956,19 @@ footer ul li:nth-child(5):hover span {
     font-size: 2em;
   }
 
+  nav a {
+    font-size: 1.2em
+  }
+
   .message {
-  visibility: hidden;
+    visibility: hidden;
   }
 
   .messageMobile {
     visibility: visible;
   }
 
-  #mijnWerkKop{
+  #mijnWerkKop {
     margin-top: 30px;
   }
 
@@ -959,7 +980,8 @@ footer ul li:nth-child(5):hover span {
     width: 100%;
   }
 
-  .blokje1 a, .blokje2 a {
+  .blokje1 a,
+  .blokje2 a {
     left: 10%;
   }
 
@@ -968,7 +990,8 @@ footer ul li:nth-child(5):hover span {
     margin-left: 0;
   }
 
-  .groteBox video, .groteBox img {
+  .groteBox video,
+  .groteBox img {
     width: 90%;
     margin-left: 5%;
   }
@@ -979,7 +1002,7 @@ footer ul li:nth-child(5):hover span {
     margin-left: 10px;
   }
 
-  .arrowD{
+  .arrowD {
     visibility: hidden;
   }
 
@@ -1005,7 +1028,7 @@ footer ul li:nth-child(5):hover span {
   #overmij p {
     font-size: 1.1em;
   }
-  
+
   footer ul {
     position: relative;
     width: 100%;
@@ -1014,12 +1037,12 @@ footer ul li:nth-child(5):hover span {
     padding: 0;
     margin-top: 20px;
   }
-  
+
 
   footer ul img {
     height: 20px;
   }
-  
+
   footer ul li {
     position: relative;
     list-style: none;
@@ -1027,5 +1050,5 @@ footer ul li:nth-child(5):hover span {
     height: 40px;
     margin: 10px 10px 10px;
   }
-  
+
 }
