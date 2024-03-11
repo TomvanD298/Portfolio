@@ -1,12 +1,3 @@
-/* main {
-  color: #e8f1f2;
-  color: #b3efb2;
-  color: #7A9E7E;
-  color: #31493c;
-  color: #001a23;
-  color: #222222;
-} */
-
 body {
   /* background-color: #003f54; */
   background-color: rgb(18, 36, 42);
@@ -21,7 +12,6 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .beginpagina {
   background-color: #66a26d;
@@ -57,7 +47,6 @@ nav a:hover {
   transition: 0.2s ease;
 }
 
-
 h1 {
   color: white;
   font-size: 5em;
@@ -66,7 +55,6 @@ h1 {
   white-space: nowrap;
   margin-top: 15%;
 }
-
 
 h1 span {
   /* color: #b3efb2; */
@@ -109,8 +97,6 @@ p a {
   border-radius: 10px;
   height: auto;
   animation: fadeInLeft 2s ease-out;
-  /* visibility: none; */
-  /* animation-delay: 0.4s; */
 }
 
 #overmij section {
@@ -195,7 +181,6 @@ p a {
 #mijnWerkKop {
   margin-top: 100px;
   width: 100%;
-  /* color: #b3efb2; */
   color: rgb(134, 252, 141);
   text-align: center;
   font-weight: 600;
@@ -211,7 +196,6 @@ p a {
 
 .blokje1:hover,
 .blokje2:hover {
-  /* border: #b3efb28e 5px solid; */
   border: rgba(134, 252, 142, 0.826) 5px solid;
   border-radius: 10px;
   box-sizing: border-box;
@@ -247,7 +231,6 @@ p a {
 
 .blokje1 a,
 .blokje2 a {
-  /* background-color: #001a2398; */
   background-color: rgba(18, 36, 42, 0.7);
   color: white;
   font-size: 1em;
@@ -265,18 +248,17 @@ p a {
   scale: 1.2;
 }
 
-
 .blokje1 a {
   position: relative;
   bottom: 50%;
-  left: 34%;
+  left: 25%;
 }
-
 
 .blokje2 a {
   position: relative;
   bottom: 50%;
-  left: 20%;
+  left: 15%;
+  padding: 30px 20px;
 }
 
 /* ----------------------------------------------Detail pagina's--------------------------------------- */
@@ -294,7 +276,6 @@ p a {
 }
 
 #home p:hover {
-  /* color: #b3efb2; */
   color: white;
   text-decoration: none;
 }
@@ -307,7 +288,6 @@ p a {
 .groteBox {
   margin: 0 0 5% 0;
   width: 100%;
-  /* background-color: #00222d; */
   background-color: rgb(29, 62, 71);
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
   padding-bottom: 20px;
@@ -317,7 +297,6 @@ p a {
 .groteBox h2 {
   text-align: center;
   font-size: 4em;
-  /* color: #b3efb2; */
   color: rgb(134, 252, 141);
   font-weight: 700;
   padding-top: 20px;
@@ -346,7 +325,6 @@ p a {
   width: 45%;
   margin-bottom: 2.5%;
   margin-left: 3.5%;
-  /* background-color: #00222d; */
   background-color: rgb(29, 62, 71);
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
@@ -364,9 +342,7 @@ p a {
 .kleineBox a {
   font-size: 1.3em;
   margin-left: 5%;
-  /* color: #08a3db; */
   color: rgb(130, 215, 251);
-  
 }
 
 .kleineBox p {
@@ -379,7 +355,6 @@ p a {
 .kleineBox h3 {
   font-size: 1.8em;
   margin-left: 5%;
-  /* color: #b3efb2; */
   color: rgb(134, 252, 141);
 }
 
@@ -399,7 +374,6 @@ p a {
 
 .miniBox {
   width: 25%;
-  /* background-color: #00222d; */
   background-color: rgb(29, 62, 71);
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
@@ -409,6 +383,7 @@ p a {
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .miniBox:hover {
@@ -416,8 +391,8 @@ p a {
 }
 
 .miniBox img {
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   padding: 30px 15px 0 15px;
   border-radius: 10px;
@@ -443,7 +418,7 @@ h4 {
 
 .arrowD {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -454,8 +429,6 @@ h4 {
   display: block;
   width: 2vw;
   height: 2vw;
-  /* border-bottom: 5px solid rgb(255, 255, 255); */
-  /* border-right: 5px solid rgb(255, 255, 255); */
   border-bottom: 10px solid rgb(130, 215, 251);
   border-right: 10px solid rgb(130, 215, 251);
   transform: rotate(45deg);
@@ -550,12 +523,9 @@ h4 {
   }
 }
 
-
-
 /* -----------------------|https://codepen.io/alvarotrigo/pen/PoKMyWE|--------------------- */
 
 .message {
-  /* background-color: #b3efb2; */
   background-color: rgb(134, 252, 141);
   color: black;
   display: block;
@@ -571,7 +541,6 @@ h4 {
 .messageMobile {
   visibility: hidden;
 }
-
 
 @keyframes openclose {
   0% {
