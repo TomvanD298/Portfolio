@@ -931,9 +931,12 @@ padding: 5px;
 @media only screen and (max-width: 800px) {
 
   body {
-    width: 90vw;
-    margin-left: 5vw;
+    width: 100vw;
+    margin: 0;
+  }
 
+  main {
+    width: 100vw;
   }
 
   ul {
@@ -943,11 +946,18 @@ padding: 5px;
 
   h1 {
     margin-top: 50px;
+    margin-left: 10%;
     font-size: 2em;
   }
 
   h2 {
     font-size: 2em;
+    margin: 0 0 0 10%;
+
+  }
+
+  h3 {
+    margin: 75px 0 0 10%;
   }
 
   nav a {
@@ -963,35 +973,36 @@ padding: 5px;
   }
 
   #mijnWerkKop {
-    margin-top: 30px;
+    margin: 15px 0 0 0;
   }
 
   .blokje1, .blokje2 {
     margin-right: 0;
   }
 
-  .blokje1 {
-    width: 100%;
+  .blokje1, .blokje2 {
+    width: 90%;
   }
 
-  .blokje2 {
-    width: 100%;
+
+  .blokje1 a {
+    left: 15%;
+    font-size: 0.7em;
   }
 
-  .blokje1 a,
   .blokje2 a {
-    left: 5%;
+    left: 25%;
     font-size: 0.7em;
   }
 
   .groteBox {
-    width: 100%;
-    margin-left: 0;
+    width: 90%;
+    margin-left: 5%;
   }
 
   .groteBox video,
   .groteBox img {
-    width: 60vw;
+    width: 80vw;
     margin-left: 5%;
   }
 
@@ -1010,10 +1021,21 @@ padding: 5px;
     visibility: hidden;
   }
 
+  .flex{
+    flex-direction: row;
+  }
+
   .kleineBox {
-    width: 100%;
-    left: 0;
-    margin: 0 0 2.5% 0;
+    width: 90%;
+    margin: 0 0 2.5% 5%;
+  }
+
+  .kleineBox:nth-last-of-type(3){
+    margin-left: 5%;
+  }
+  
+  .kleineBox:nth-last-of-type(1){
+    margin-left: 5%;
   }
 
   h4{
@@ -1029,7 +1051,7 @@ padding: 5px;
   }
 
   .miniBox {
-    width: 90%;
+    width: 70%;
     margin: 0 0 10px 0;
   }
 
@@ -1041,18 +1063,28 @@ padding: 5px;
 
   #overmij {
     flex-wrap: wrap;
+    margin-top: 0;
   }
 
   #overmij img {
     width: 60%;
     border-radius: 50%;
+    margin-bottom: 0;
   }
 
   #overmij section {
     width: 90%;
   }
 
+  #overmij h1{
+    margin-left: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
   #overmij p {
+    width: 90%;
+    margin-left: 5%;
     font-size: 1.1em;
   }
 
